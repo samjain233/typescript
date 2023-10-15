@@ -1,0 +1,5 @@
+//type aliasis
+type Num = number;
+
+let x: Num = 10;
+console.log(x);
