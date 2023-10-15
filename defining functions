@@ -33,3 +33,17 @@ const func2 : funcType2 = (n, m , l = 0)=>{
 
 console.log(func(2,3,1));
 console.log(func(1,2));
+
+
+//Rest operator
+
+type funcType = (...args:number[])=>number;
+const add:funcType = (...data)=>{
+  return data.reduce((acc,curr)=>{
+    return acc+curr;
+  
+},0);
+  
+}
+console.log(add(1,2,3,4,5));
+
