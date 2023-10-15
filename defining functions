@@ -1,0 +1,13 @@
+const func = (a:number,b:number):number=>{
+  return a*b;
+}
+console.log(func(45 , 23));
+
+
+//another way 
+type dType = (a:number , b:number)=>number;
+const func2:dType = (n,m)=>{
+  return n+m;
+}
+
+console.log(func2(4,3));
