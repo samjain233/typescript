@@ -11,3 +11,25 @@ const func2:dType = (n,m)=>{
 }
 
 console.log(func2(4,3));
+
+//optional parameter
+
+type funcType = (n:number , m:number , l?:number) =>number;
+
+const func :funcType = (n , m , l)=>{
+  return n+m+(l||0);
+}
+
+console.log(func(2,3,1));
+console.log(func(1,2));
+
+
+//default parameter
+
+type funcType2 = (n:number , m : number , l?:number)=>number;
+const func2 : funcType2 = (n, m , l = 0)=>{
+  return n+m+l;
+}
+
+console.log(func(2,3,1));
+console.log(func(1,2));
