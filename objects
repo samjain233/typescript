@@ -1,0 +1,12 @@
+type Obj = {
+  name: string;
+  age: number;
+  gender ?: boolean;
+}
+
+const o: Obj = {
+  name: 'John',
+  age: 30,
+}
+
+console.log(o);
